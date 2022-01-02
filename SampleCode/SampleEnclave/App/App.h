@@ -49,8 +49,12 @@
 # define FALSE 0
 #endif
 
+#ifndef TOKEN_FILENAME
 # define TOKEN_FILENAME   "enclave.token"
+#endif
+#ifndef ENCLAVE_FILENAME
 # define ENCLAVE_FILENAME "enclave.signed.so"
+#endif
 
 extern sgx_enclave_id_t global_eid;    /* global enclave id */
 
